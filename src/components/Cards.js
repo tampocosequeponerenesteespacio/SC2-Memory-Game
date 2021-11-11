@@ -1,11 +1,12 @@
 import React from "react";
 import Card from "./Card";
 
-const Cards = ({units}) => {
+const Cards = ({units, onClick}) => {
+    
     return (
         units.map( (u) => {
             return(
-                <Card name={u} />
+                <Card name={u} onClick={onClick} />
             )
         })
     )

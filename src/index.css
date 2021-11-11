@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#bg {
+  background-image: url('./background/bg.jpg');
+  filter: blur(4px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scale(1.05);
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 50, 0.8);
+  color: lightblue; 
+  padding
+  : 10px 20px 20px 20px; 
+}
+#header > * {
+  text-shadow: lightblue 0px 0px 10px;
+}
+
+#header > h1 {
+  font-size: 50px;
+}
+
+#cards {
+  justify-content: center;
+  padding: 30px 200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+
+.card {
+  box-shadow: lightblue 0px 0px 5px 2px;
+  background-color: rgba(0, 0, 50, 0.8);
+  color: lightblue;  
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 100ms;
+}
+
+.card > h2 {
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#score {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 50, 0.5);
+  color: lightblue;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#footer {
+  background-color: rgba(0, 0, 50, 0.5) ;
+  color: lightblue;
+  font-weight: 300;
+  text-align: center;
+  padding: 4px;
+
+}
+
+
+
